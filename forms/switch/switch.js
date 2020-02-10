@@ -1,19 +1,19 @@
-
+//checks what is entered as variables above and displays a message depending on what was entered using a switch statement
 switch(true) {
   case (state === 'NE' && tempF < 32):
-    alert(`${messageArray[0]}`)
+    NSB.MsgBox(`${firstName}, ${messageArray[0]}`)
     break;
   case (state === 'NE' && tempF >32 && tempF <50):
-    alert(`${messageArray[1]}`)
+    NSB.MsgBox(`${firstName}, ${messageArray[1]}`)
     break;
   case (state === 'FL' && tempF >32 && tempF < 50):
-    alert(`${messageArray[2]}`)
+    NSB.MsgBox(`${firstName}, ${messageArray[2]}`)
     break;
   case (state === 'FL' && tempF > 50 && tempF <70):
-    alert(`${messageArray[3]}`)
+    NSB.MsgBox(`${firstName}, ${messageArray[3]}`)
     break;
   default:
-    alert(`Enter correct state and temp format`)
+    NSB.MsgBox(`Enter correct state and temp format`)
     break;
 }
 
